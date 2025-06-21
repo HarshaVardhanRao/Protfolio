@@ -6,129 +6,7 @@
   <title>Vijapuram Harshavardhan | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <style>
-    body {
-      background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
-      min-height: 100vh;
-      font-family: 'Segoe UI', 'Arial', sans-serif;
-      transition: background 0.5s;
-    }
-    .navbar {
-      background: linear-gradient(90deg, #6366f1 0%, #06b6d4 100%) !important;
-    }
-    .navbar-brand, .nav-link, .btn-outline-light {
-      color: #fff !important;
-    }
-    .nav-link.active, .nav-link:focus, .nav-link:hover {
-      color: #ffe066 !important;
-      text-shadow: 0 2px 8px #6366f1;
-    }
-    .section-title {
-      margin-top: 3rem; margin-bottom: 2rem; font-weight: 800; letter-spacing: 1px; text-align: center;
-      color: #4f46e5;
-      animation: fadeInDown 1s;
-    }
-    .divider {
-      border-top: 3px dashed #a5b4fc; margin: 3rem 0 2rem 0;
-      animation: fadeIn 1.2s;
-    }
-    .profile-img {
-      box-shadow: 0 4px 24px rgba(99,102,241,0.18);
-      border: 4px solid #fff;
-      background: #e0e7ff;
-      animation: fadeIn 1.2s;
-    }
-    .card {
-      border-radius: 1.2rem;
-      box-shadow: 0 2px 16px rgba(6,182,212,0.08);
-      transition: box-shadow 0.2s, transform 0.2s;
-      background: #fff;
-      animation: fadeInUp 1s;
-    }
-    .card:hover {
-      box-shadow: 0 8px 32px rgba(99,102,241,0.18);
-      transform: translateY(-6px) scale(1.02);
-    }
-    .badge-tech {
-      margin: 0.2rem; font-size: 1rem; letter-spacing: 0.5px;
-      background: linear-gradient(90deg, #6366f1 0%, #06b6d4 100%);
-      color: #fff;
-      box-shadow: 0 2px 8px #a5b4fc33;
-      border: none;
-      animation: fadeIn 1.2s;
-    }
-    .btn, .btn:focus {
-      border-radius: 2rem;
-      transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
-      outline: none;
-    }
-    .btn:focus, .btn:active {
-      box-shadow: 0 0 0 0.2rem #6366f1aa;
-      transform: scale(1.04);
-    }
-    .btn-outline-primary, .btn-outline-success, .btn-outline-info, .btn-outline-dark {
-      border-width: 2px;
-    }
-    .btn-outline-primary:hover, .btn-outline-success:hover, .btn-outline-info:hover, .btn-outline-dark:hover {
-      background: linear-gradient(90deg, #6366f1 0%, #06b6d4 100%);
-      color: #fff !important;
-      border-color: #6366f1;
-    }
-    .footer {
-      margin-top: 3rem; padding: 1.5rem 0; background: linear-gradient(90deg, #6366f1 0%, #06b6d4 100%); color: #fff; text-align: center; letter-spacing: 1px;
-      animation: fadeIn 1.5s;
-    }
-    .contact-form .form-control {
-      border-radius: 0.75rem;
-      border: 2px solid #a5b4fc;
-      transition: border 0.2s;
-    }
-    .contact-form .form-control:focus {
-      border: 2px solid #6366f1;
-      box-shadow: 0 0 0 0.2rem #6366f1aa;
-    }
-    .list-group-item {
-      background: transparent; border: none; font-size: 1.08rem;
-      color: #334155;
-      animation: fadeIn 1.2s;
-    }
-    .publication-link { text-decoration: underline; }
-    .focus-ring:focus { outline: 2px solid #6366f1; outline-offset: 2px; }
-    @media (max-width: 767px) {
-      .section-title { font-size: 1.5rem; }
-      .profile-img { width: 90px !important; height: 90px !important; }
-    }
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    /* Dark mode */
-    .dark-mode {
-      background: linear-gradient(135deg, #181a1b 0%, #23272b 100%) !important;
-      color: #f8f9fa !important;
-    }
-    .dark-mode .card {
-      background: #23272b;
-      color: #f8f9fa;
-    }
-    .dark-mode .navbar, .dark-mode .footer {
-      background: linear-gradient(90deg, #23272b 0%, #181a1b 100%) !important;
-    }
-    .dark-mode .section-title { color: #a5b4fc; }
-    .dark-mode .badge-tech { background: linear-gradient(90deg, #818cf8 0%, #06b6d4 100%); color: #fff; }
-    .dark-mode .list-group-item { color: #e0e7ff; }
-    .dark-mode .contact-form .form-control { background: #23272b; color: #fff; border-color: #6366f1; }
-    .dark-mode .contact-form .form-control:focus { border-color: #a5b4fc; }
-  </style>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <!-- Navbar -->
@@ -145,7 +23,6 @@
           <li class="nav-item"><a class="nav-link focus-ring" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link focus-ring" href="#certifications">Certifications</a></li>
           <li class="nav-item"><a class="nav-link focus-ring" href="#publications">Publications</a></li>
-          <li class="nav-item"><a class="nav-link focus-ring" href="#contact">Contact</a></li>
         </ul>
         <button class="btn btn-outline-light ms-3" id="toggleMode" title="Toggle dark/light mode" aria-label="Toggle dark or light mode"><i class="bi bi-moon"></i></button>
       </div>
@@ -155,13 +32,13 @@
   <!-- Home Section -->
   <section id="home" class="container text-center py-5">
     <img src="https://avatars.githubusercontent.com/u/HarshaVardhanRao" alt="Profile" class="rounded-circle mb-3 profile-img" width="120" height="120" onerror="this.style.display='none'">
-    <h1 class="fw-bold" style="color:#6366f1; animation:fadeInDown 1s;">Vijapuram Harshavardhan</h1>
-    <p class="lead mb-4" style="color:#0ea5e9; animation:fadeIn 1.2s;">Computer Science Undergraduate &bull; Web Development &bull; Software Engineering &bull; Cloud Technologies</p>
+    <h1 class="fw-bold" style="color:var(--primary);">Vijapuram Harshavardhan</h1>
+    <p class="lead mb-4" style="color:var(--secondary);">Computer Science Undergraduate &bull; Web Development &bull; Software Engineering &bull; Cloud Technologies</p>
     <div class="d-flex flex-wrap justify-content-center gap-3 mb-2">
       <a href="mailto:hvijapuram@gmail.com" class="btn btn-outline-primary focus-ring" aria-label="Email Vijapuram Harshavardhan"><i class="bi bi-envelope"></i> Email</a>
       <a href="https://github.com/HarshaVardhanRao" class="btn btn-outline-dark focus-ring" target="_blank" aria-label="GitHub Profile"><i class="bi bi-github"></i> GitHub</a>
       <a href="https://www.linkedin.com/in/harshavardhan1974/" class="btn btn-outline-info focus-ring" target="_blank" aria-label="LinkedIn Profile"><i class="bi bi-linkedin"></i> LinkedIn</a>
-      <a href="#" class="btn btn-outline-success resume-link focus-ring" download aria-label="Download Resume">Download Resume</a>
+      <a href="HarshaResume.pdf" class="btn btn-outline-success resume-link focus-ring" download aria-label="Download Resume">Download Resume</a>
     </div>
     <p class="mt-3" style="color:#334155;"><i class="bi bi-geo-alt"></i> Andhra Pradesh, India</p>
   </section>
@@ -197,7 +74,7 @@
       <div class="col-md-6 col-lg-6">
         <div class="card h-100 p-3">
           <div class="card-body">
-            <h5 class="card-title" style="color:#6366f1;">MITS-FLEX</h5>
+            <h5 class="card-title" style="color:var(--primary);">MITS-FLEX</h5>
             <p class="card-text">A student performance tracker for academic and extracurricular activities.</p>
           </div>
         </div>
@@ -205,7 +82,7 @@
       <div class="col-md-6 col-lg-6">
         <div class="card h-100 p-3">
           <div class="card-body">
-            <h5 class="card-title" style="color:#06b6d4;">Ashv Registration Management Software</h5>
+            <h5 class="card-title" style="color:var(--secondary);">Ashv Registration Management Software</h5>
             <p class="card-text">Software for efficient event registration and management.</p>
           </div>
         </div>
@@ -221,7 +98,7 @@
       <div class="col-md-6 col-lg-6">
         <div class="card h-100 p-3">
           <div class="card-body">
-            <h5 class="card-title" style="color:#f59e42;">Carbon Compass</h5>
+            <h5 class="card-title" style="color:var(--accent);">Carbon Compass</h5>
             <p class="card-text">Coal mine carbon tracking and monitoring system.</p>
           </div>
         </div>
@@ -250,8 +127,8 @@
   <section id="publications" class="container">
     <h2 class="section-title">Publications</h2>
     <div class="card p-4 mb-4">
-      <h5 class="mb-2" style="color:#6366f1;">“Carbon Monitoring using Web Intelligence”</h5>
-      <p class="mb-2">Published at International Conference on Green Technologies (2024)</p>
+      <h5 class="mb-2" style="color:var(--primary);">“The Impact Analysis of different activation functions CNN-based reduced OPF”</h5>
+      <p class="mb-2">Published at PIICON (2024)</p>
       <a href="#" class="btn btn-outline-primary publication-link focus-ring" target="_blank" aria-label="View Publication">View Publication</a>
     </div>
   </section>
@@ -279,31 +156,11 @@
   </section>
 
   <footer class="footer">
-    &copy; 2025 Vijapuram Harshavardhan | Portfolio
+      Vijapuram Harshavardhan | Portfolio
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Dark/Light mode toggle
-    const toggleBtn = document.getElementById('toggleMode');
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      document.querySelectorAll('.card, .navbar, .footer').forEach(el => el.classList.toggle('dark-mode'));
-      toggleBtn.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="bi bi-brightness-high"></i>' : '<i class="bi bi-moon"></i>';
-    });
-    // Animate on scroll
-    function animateOnScroll() {
-      document.querySelectorAll('.card, .section-title, .divider').forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 50) {
-          el.style.opacity = 1;
-          el.style.transform = 'none';
-        }
-      });
-    }
-    window.addEventListener('scroll', animateOnScroll);
-    window.addEventListener('DOMContentLoaded', animateOnScroll);
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
 
