@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dev Mode | Vijapuram Harshavardhan</title>
+  <link rel="stylesheet" href="dev-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <nav class="dev-navbar" aria-label="Developer Navigation">
+    <div class="dev-navbar-profile">
+      <img src="https://avatars.githubusercontent.com/u/110322956?v=4" alt="Harsha's profile" class="dev-navbar-img" />
+      <span class="dev-navbar-title">Harshavardhan</span>
+      <span class="dev-navbar-role">Backend Engineer</span>
+    </div>
+    <div class="dev-navbar-nav">
+      <a href="#system-status"><i class="fa-solid fa-server"></i> System Status</a>
+      <a href="#endpoints"><i class="fa-solid fa-diagram-project"></i> Endpoints</a>
+      <a href="#logs"><i class="fa-solid fa-scroll"></i> Logs</a>
+      <a href="#cli-resume"><i class="fa-solid fa-terminal"></i> CLI Resume</a>
+      <a href="index.html" style="text-decoration: none;">Revert Dev</a> 
+    </div>
+  </nav>
+  <main class="dev-terminal-grid" style="margin: 0 auto; max-width: 1100px;">
+    <section class="terminal-section system-status" id="system-status">
+      <h2><i class="fa-solid fa-server"></i> System Status</h2>
+      <div><span class="prompt">$</span> uptime: <span style="color:#00FF99">active</span></div>
+      <div><span class="prompt">$</span> api_status: <span style="color:#00FF99">healthy</span></div>
+      <div><span class="prompt">$</span> db: <span style="color:#00FF99">connected</span></div>
+      <div><span class="prompt">$</span> deployments: <span style="color:#FFB84D">3</span></div>
+    </section>
+    <section class="terminal-section endpoints-section" id="endpoints">
+      <h2><i class="fa-solid fa-diagram-project"></i> Endpoints</h2>
+      <pre>{
+  "GET /api/v1/users": "200 OK",
+  "POST /api/v1/auth": "201 Created",
+  "GET /api/v1/logs": "200 OK"
+}</pre>
+    </section>
+    <section class="terminal-section logs-section" id="logs">
+      <h2><i class="fa-solid fa-scroll"></i> Logs</h2>
+      <pre>[2025-06-22 10:00] deployed EcoGift on AWS
+[2025-04-14 09:12] launched EventSync
+[2024-12-15 18:30] migrated Carbon Compass to Django 4.2</pre>
+    </section>
+    <section class="terminal-section cli-resume-section" id="cli-resume">
+      <h2><i class="fa-solid fa-terminal"></i> CLI Resume</h2>
+      <pre>> cat resume.txt
+
+Vijapuram Harshavardhan
+Backend Developer | DevOps Enthusiast
+
+Education: B.Tech CSE, MITS (2022–2026), CGPA: 9.24
+Languages: Python, C, Java
+Frameworks: Django, Flask, FastAPI
+DBs: PostgreSQL, MySQL, MongoDB
+Cloud: AWS, Firebase
+Tools: Git, Docker, VSCode
+Infra: Nginx, Gunicorn</pre>
+    </section>
+  </main>
+  <footer style="border-top:2px solid #00FF99; margin-top:32px; padding:18px 0 0 0; text-align:center; color:#00FF99; font-family:'JetBrains Mono',monospace; font-size:1em;">
+    <span style="letter-spacing:0.04em;">© 2025 Vijapuram Harshavardhan | Dev Mode</span>
+  </footer>
+</body>
+</html>
